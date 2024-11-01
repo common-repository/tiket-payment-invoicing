@@ -1,0 +1,30 @@
+.fc-daygrid-event {
+	display: flex;
+	flex-direction: column;
+}
+
+.fc-event-title {
+	white-space: normal;
+	word-break: break-word;
+}
+
+.fc-daygrid-event-time {
+	display: block;
+}
+
+.fc-daygrid-event-dot {
+	display: none;
+}
+
+@media (max-width: 992px) {
+	.fc-toolbar {
+		/* Styles for mobile view */
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+
+		.fc-button {
+			margin-bottom: 5px;
+		}
+	}
+}

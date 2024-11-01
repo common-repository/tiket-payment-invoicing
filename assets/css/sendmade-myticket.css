@@ -1,0 +1,162 @@
+.sendmade-wrapper {
+	width: 100%;
+	display: flex;
+	margin-bottom: 5.55vw;
+}
+
+.sendmade-left {
+	width: 27.65%; /*250 / 904*/
+	border-right: 0.2vw solid #12341b;
+}
+
+.sendmade-left img {
+	width: 81.2%;
+	height: 20.5vw;
+	margin-right: auto;
+	object-fit: cover;
+}
+
+.sendmade-right {
+	width: 72.35%;
+	padding-top: 2vw;
+	margin-left: 1.11vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.sendmade-row {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	width: 100%;
+}
+
+.sendmade-eventTitle {
+	font-size: 1.66vw;
+	color: #12341b;
+	font-family: 'TTHoves-Bold';
+	font-weight: 700;
+}
+
+.sendmade-designerName {
+	font-size: 0.8vw;
+	color: #12341b;
+	font-family: 'TTHoves';
+	font-weight: 400;
+	letter-spacing: 0.2vw;
+	margin-left: 2vw;
+}
+
+.sendmade-playButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5vw 5vw;
+	color: white;
+	background: #12341b;
+	cursor: pointer;
+}
+
+.sendmade-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5vw 5vw;
+	color: #12341b;
+	border-top: 0.2vw solid #12341b;
+	cursor: pointer;
+	margin-left: 1.11vw;
+}
+
+.sendmade-thin {
+	font-family: 'TTHoves';
+	color: #12341b;
+}
+
+.sendmade-bold {
+	font-family: 'TTHoves';
+	color: #12341b;
+	font-weight: 700;
+}
+
+.sendmade-playButton,
+.sendmade-link,
+.sendmade-thin,
+.sendmade-bold {
+	font-size: 1.11vw;
+}
+
+.sendmade-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.align-rigth {
+	text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+	.sendmade-wrapper {
+		flex-direction: column;
+		border-top: 1vw solid #12341b;
+		padding-top: 5vw;
+		margin-top: 3vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+	.sendmade-col {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sendmade-left {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		border-right: 0px;
+	}
+
+	.sendmade-left img {
+		width: 42vw;
+		height: 61.5vw;
+		object-fit: cover;
+		margin-right: 3vw;
+		margin-bottom: 5vw;
+	}
+
+	.sendmade-right {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.sendmade-eventTitle {
+		font-size: 5vw;
+		margin-top: 3vw;
+	}
+
+	.sendmade-designerName {
+		font-size: 3.125vw;
+		margin-left: 0;
+	}
+
+	.sendmade-playButton {
+		margin-bottom: 3vw;
+	}
+
+	.sendmade-link {
+		border-top-width: 1vw;
+	}
+
+	.sendmade-playButton,
+	.sendmade-link,
+	.sendmade-thin,
+	.sendmade-bold {
+		font-size: 5vw;
+	}
+}

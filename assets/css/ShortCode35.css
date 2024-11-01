@@ -1,0 +1,179 @@
+@font-face {
+	font-family: 'Icons';
+	src: url(../icons.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* globalAndPlugin.css start */
+
+.btn {
+	background-color: #f45c2e;
+	border-color: #f45c2e;
+}
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	max-width: 300px;
+	z-index: 5;
+	background-color: white;
+	border: 1px solid #f9f9f9;
+	padding: 30px;
+	background: rgb(255, 255, 255);
+	border-radius: 4px;
+	box-shadow: rgba(0, 1, 0, 0) 0px 0px 0px 1px,
+		rgba(0, 0, 0, 0.15) 0px 5px 25px 0px, rgba(0, 0, 0, 0.05) 0px 3px 3px 0px;
+}
+
+.popupClose {
+	width: 44px;
+	height: 44px;
+	cursor: pointer;
+}
+
+.dialog {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	background-color: white;
+	border: 1px solid #f9f9f9;
+	max-height: 100%;
+	overflow-y: scroll;
+	box-shadow: 0 0 0 1px rgba(0, 1, 0, 0), 0 5px 25px 0 rgba(0, 0, 0, 0.15),
+		0 3px 3px 0 rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+	.dialog {
+		padding: 0;
+		width: 100vw;
+		max-width: unset;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.dialog {
+		padding: 30px;
+		width: unset;
+		max-width: 800px;
+	}
+}
+
+.btn-sm {
+	padding: 10px 30px;
+	font-size: 15px;
+}
+
+/* globalAndPlugin.css finish */
+
+/* other generic start */
+
+.input-text,
+popup > button {
+	width: 100% !important;
+	box-sizing: border-box;
+}
+
+.form-box-item input,
+.form-box-item select {
+	margin: 0 0 20px 0;
+}
+
+.btn {
+	color: #fff;
+	border-radius: 3px;
+	display: inline-block;
+	text-decoration: none;
+	border-style: solid;
+	border-width: 1px;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	text-align: center;
+	transition: all 0.5s;
+	font-weight: 500;
+}
+
+.input-select,
+.input-text,
+.input-textarea {
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	outline: none;
+	padding: 10px;
+	font-size: 14px;
+	background: #fff;
+}
+
+.boxed-area,
+.hc-cmp-column .hc-cmp-column.boxed-area,
+.hc-cmp-column .hc-cmp-column.boxed-area:last-child {
+	border-radius: 3px;
+}
+
+@media screen and (max-width: 800px) {
+	.boxed-area {
+		padding: 30px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.boxed-area {
+		padding: 0px;
+	}
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-lg-6 {
+	padding-right: 15px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+@media (min-width: 992px) {
+	.col-lg-6 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+.input-select,
+.input-text,
+.input-textarea {
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	outline: none;
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	background: #fff;
+	margin: 0 0 20px;
+	transition: all 0.5s;
+}
+
+.form-box-item p {
+	font-weight: 600;
+}
+
+.form-box p {
+	font-weight: bold;
+	margin: 0 0 10px;
+}
+
+.dialog {
+	height: 100vh;
+}

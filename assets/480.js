@@ -1,0 +1,1 @@
+(self.webpackChunktiket_on_wordpress=self.webpackChunktiket_on_wordpress||[]).push([[480],{42480:()=>{}}]);

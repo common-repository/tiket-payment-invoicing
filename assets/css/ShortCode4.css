@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap');
+
+.paymentButton,
+.loginButton,
+.loginAndRegButton,
+.otherButton {
+	text-transform: uppercase;
+	border: none;
+	border-radius: calc(8px + 8 * ((100vw - 1440px) / 1440));
+	height: 2.2vw; /*44/1920*/
+	padding-left: 1.3vw; /*25/1920*/
+	padding-right: 1.3vw; /*25/1920*/
+	font-family: 'Rubik';
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	width: auto;
+	font-size: calc(15px + 15 * ((100vw - 1440px) / 1440));
+	line-height: calc(25px + 25 * ((100vw - 1440px) / 1440));
+	margin: 0.3vw 1vw 0vw;
+	min-width: max-content;
+}
+
+.googleLoginButton {
+	display: flex;
+	justify-content: flex-end;
+	background-image: url('../../app/containers/Tiket/assets/images/googleicon.svg');
+	background-size: 1.3vw 1.3vw;
+	background-repeat: no-repeat;
+	background-position: 1vw center;
+	min-width: 90%;
+	margin-left: 5%;
+}
+
+.fbButton {
+	color: white;
+}
+
+button[disabled],
+button:disabled {
+	background: #ddd !important;
+	color: #aaa !important;
+	cursor: default;
+}
+
+.loginAndRegistrationDialog,
+.loginContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.label,
+.input {
+	width: 90% !important;
+	min-width: 90% !important;
+	margin-left: 5% !important;
+}
+
+.input:focus {
+	outline: none !important;
+}
+
+.input {
+	margin-bottom: 1vw !important;
+	border: 1px solid black !important;
+	border-radius: 10px !important;
+	height: calc(50px + 50 * ((100vw - 1440px) / 1440));
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.leftMargin0 {
+	margin-left: 0 !important;
+}
+
+.selectors {
+	border-radius: calc(8px + 8 * ((100vw - 1440px) / 1440));
+	border: 1px solid black;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	justify-content: space-between;
+	height: 2.2vw; /*44/1920*/
+	margin: 0 5%;
+}
+.materialLike {
+	color: red;
+	font-size: calc(15px + 15 * ((100vw - 1440px) / 1440));
+	line-height: calc(25px + 25 * ((100vw - 1440px) / 1440));
+	padding: 0.5vw 5vw;
+	margin-top: 0.5vw;
+	margin-bottom: 0.5vw;
+	border-radius: 5px;
+	display: block;
+	font-family: 'Puritan';
+}
+
+@media screen and (max-width: 767px) {
+	.materialLike {
+		font-size: calc(25px + 25 * ((100vw - 767px) / 767));
+		line-height: calc(35px + 35 * ((100vw - 767px) / 767));
+	}
+}

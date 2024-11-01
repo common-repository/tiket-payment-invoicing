@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700;1,900&family=Rubik:wght@700&display=swap');
+
+* {
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+button {
+	border: none;
+}
+
+.paymentButton {
+	text-transform: uppercase;
+	background: #8facae;
+	border: none;
+	color: white;
+	border-radius: calc(8px + 8 * ((100vw - 1440px) / 1440));
+	height: 2.2vw; /*44/1920*/
+	padding-left: 1.3vw; /*25/1920*/
+	padding-right: 1.3vw; /*25/1920*/
+	font-family: 'Rubik';
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	font-size: calc(15px + 15 * ((100vw - 1440px) / 1440));
+	width: auto;
+	line-height: calc(25px + 25 * ((100vw - 1440px) / 1440));
+	margin: 0.3vw 1vw 2vw;
+	min-width: max-content;
+}
+.paymentButton:disabled,
+.paymentButton[disabled] {
+	background: #ddd;
+	color: #aaa;
+	cursor: default;
+}
+
+.expandIcon {
+	display: inline-block;
+	margin-left: 1vw;
+	font-family: 'Rubik';
+	font-size: calc(15px + 15 * ((100vw - 1440px) / 1440));
+	transform: rotate(270deg);
+}
+
+.eventTimeSelector {
+	position: relative;
+	background: #8facae;
+	color: white;
+	font-family: 'Rubik';
+	padding: 3vw;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.selectedEventTimesCount {
+	background: #8facae;
+	color: white;
+	font-family: 'Rubik';
+	font-weight: 700;
+	padding: 0.3vw;
+	border-radius: 5px;
+}
+
+.paymentButtonContainer {
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-height: auto;
+	width: max-content;
+}
+
+.outerContainer {
+	position: relative;
+}
+
+.incOrDecr {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.incOrDecrButton,
+.quantity {
+	display: block;
+	background: black;
+	color: white;
+	font-family: 'Rubik';
+	font-size: calc(14px + 14 * ((100vw - 1440px) / 1440));
+	text-align: center;
+	margin: 0.05vw;
+	width: 1.3vw; /*22/1920*/
+	line-height: 1.3vw; /*22/1920*/
+}
+
+.outlined {
+	border-radius: calc(8px + 8 * ((100vw - 1440px) / 1440));
+	border: 1px solid black;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	justify-content: space-between;
+	height: 2.2vw; /*44/1920*/
+	padding-left: 1vw;
+	padding-right: 1vw;
+	cursor: pointer;
+}
+
+.dateText {
+	font-size: calc(14px + 14 * ((100vw - 1440px) / 1440));
+}
+
+@media screen and (max-width: 600px) {
+	.eventTimeSelectorContainer,
+	.paymentButtonContainer {
+		width: 100%;
+	}
+	.dateText {
+		font-size: calc(25px + 25 * ((100vw - 600px) / 600));
+		height: 8vw;
+	}
+	.expandIcon {
+		font-size: calc(25px + 25 * ((100vw - 600px) / 600));
+	}
+	.outlined {
+		border-radius: calc(8px + 8 * ((100vw - 600px) / 600));
+	}
+	.incOrDecrButton,
+	.quantity {
+		font-size: calc(25px + 25 * ((100vw - 680px) / 680));
+		margin: 0.5vw;
+		width: 5vw;
+		line-height: 5vw;
+	}
+	.paymentButton {
+		font-size: calc(25px + 25 * ((100vw - 680px) / 680));
+		height: 10vw;
+		border-radius: calc(8px + 8 * ((100vw - 600px) / 600));
+	}
+}

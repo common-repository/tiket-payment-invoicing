@@ -1,0 +1,18 @@
+.input-select,
+.input-text,
+.input-textarea {
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	outline: none;
+	padding: 10px;
+	font-size: 14px;
+	background: #fff;
+}
+
+.input-select,
+.input-text,
+.input-textarea {
+	padding: 10px !important;
+	border-color: rgb(219, 222, 224) !important;
+}

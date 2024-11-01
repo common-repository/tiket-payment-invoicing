@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700;1,900&family=Rubik:wght@700&display=swap');
+
+* {
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+button {
+	border: none;
+}
+
+.charityButton {
+	text-transform: uppercase;
+	background: #8facae;
+	border: none;
+	color: white;
+	border-radius: calc(8px + 8 * ((100vw - 1440px) / 1440));
+	height: 2.2vw; /*44/1920*/
+	padding-left: 1.3vw; /*25/1920*/
+	padding-right: 1.3vw; /*25/1920*/
+	font-family: 'Rubik';
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	font-size: calc(15px + 15 * ((100vw - 1440px) / 1440));
+	width: auto;
+	line-height: calc(25px + 25 * ((100vw - 1440px) / 1440));
+	min-width: max-content;
+}
+.paymentButton:disabled,
+.paymentButton[disabled] {
+	background: #ddd;
+	color: #aaa;
+}
+
+.charityOuter {
+	background: #eee;
+	display: flex;
+	flex-direction: column;
+	padding: 1vw;
+	border: 2px solid #555;
+}
+
+.upperText {
+	font-size: calc(18px + 18 * ((100vw - 1440px) / 1440));
+	font-family: 'Rubik';
+}
+
+@media screen and (max-width: 767px) {
+	.charityButton {
+		height: 10vw;
+		font-size: calc(25px + 25 * ((100vw - 767px) / 767));
+	}
+
+	.charityOuter {
+		height: max-content;
+	}
+
+	.upperText {
+		font-size: calc(30px + 30 * ((100vw - 767px) / 767));
+	}
+}

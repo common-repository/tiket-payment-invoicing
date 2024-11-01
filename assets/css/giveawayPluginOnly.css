@@ -1,0 +1,163 @@
+.btn-xs {
+	padding: 2px 15px;
+}
+
+.icon-links {
+	display: flex;
+}
+
+.social-colors.icon-links-button .facebook:not(:hover),
+.social-colors-hover.icon-links-button .facebook:hover,
+.social-colors.icon-links-grid .facebook:not(:hover),
+.social-colors-hover.icon-links-grid .facebook:hover {
+	background-color: #3b5998;
+	border-color: #3b5998;
+	color: #fff;
+}
+
+.icon-links-grid a:first-child {
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.icon-links a i {
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	font-size: 18px;
+	transition: all 0.5s;
+}
+
+.social-colors.icon-links-button .instagram:not(:hover),
+.social-colors-hover.icon-links-button .instagram:hover,
+.social-colors.icon-links-grid .instagram:not(:hover),
+.social-colors-hover.icon-links-grid .instagram:hover {
+	background-color: #464646;
+	border-color: #464646;
+	color: #fff;
+}
+
+.social-colors.icon-links-button i,
+.social-colors.icon-links-grid i,
+.social-colors-hover.icon-links-button i,
+.social-colors-hover.icon-links-grid i {
+	transition: none;
+}
+
+.light,
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light h5,
+.light h6,
+.light p,
+.light .btn-text,
+.light .btn-text:hover,
+.light .btn a,
+.light .btn:hover,
+.light .glide__arrow,
+.light .counter .value span:last-child,
+.light.counter .value span:last-child,
+.light .icon-links a i,
+.social-colors.icon-links-grid i,
+.icon-links-button a i {
+	color: #fff !important;
+}
+
+.icon-links a i {
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	font-size: 18px;
+	transition: all 0.5s;
+}
+
+.icon-social a i {
+	transform: translateX(-50%) translateY(calc(-50% + 2px));
+}
+
+.social-colors.icon-links-button .youtube:not(:hover),
+.social-colors-hover.icon-links-button .youtube:hover,
+.social-colors.icon-links-grid .youtube:not(:hover),
+.social-colors-hover.icon-links-grid .youtube:hover {
+	background-color: #cc181e;
+	border-color: #cc181e;
+	color: #fff;
+}
+
+.icon-links > a:last-child {
+	margin-right: 0;
+}
+
+.icon-links-grid a:last-of-type {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.icon-links a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-right: 15px;
+	position: relative;
+	cursor: pointer;
+}
+
+.icon-links-grid a {
+	border-style: solid;
+	border-width: 1px;
+	border-right: none;
+	width: 50px;
+	height: 40px;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	display: inline-block;
+}
+
+.icon-facebook:before {
+	content: '\6b';
+}
+
+.icon-instagram:before {
+	content: '\70';
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+	font-family: 'Icons';
+	font-style: normal;
+	font-weight: normal;
+	font-feature-settings: normal;
+	font-variant: normal;
+	text-transform: none;
+	speak: none;
+	text-transform: none;
+}
+
+.btn,
+.tab-nav li.active a,
+.tab-nav li:hover a,
+.tab-nav.align-center li.active a,
+.tab-nav.align-center li:hover a,
+.icon-links-grid a:hover,
+.icon-links-button a,
+nav.light a.btn-border:hover,
+.btn-border:hover,
+.menu-transparent .btn:not(.btn-border) {
+	background-color: rgb(244, 93, 47);
+	border-color: rgb(244, 93, 47);
+}

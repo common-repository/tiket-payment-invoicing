@@ -1,0 +1,49 @@
+.toggle-button {
+	display: inline-block;
+	position: relative;
+	width: 50px;
+	height: 30px;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.toggle-button:focus {
+	outline: none;
+}
+
+.toggle-button-inner {
+	position: relative;
+	width: 44px;
+	height: 24px;
+	border-radius: 12px;
+	background-color: #e5e5e5;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-button-circle {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+	transition: transform 0.3s ease-in-out;
+}
+
+.toggle-button.on .toggle-button-inner {
+	background-color: #4cd964;
+}
+
+.toggle-button.on .toggle-button-circle {
+	transform: translateX(20px);
+}
+
+.toggle-cnt {
+	display: flex;
+	align-items: center;
+	padding: 7px 0;
+}

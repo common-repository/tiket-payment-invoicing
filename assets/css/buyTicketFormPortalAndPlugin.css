@@ -1,0 +1,152 @@
+.btn {
+	background-color: #f45c2e;
+	border-color: #f45c2e;
+}
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate3D(-50%, -50%, 10px);
+	box-sizing: border-box;
+	max-width: 300px;
+	background-color: white;
+	border: 1px solid #f9f9f9;
+	padding: 30px;
+	background: rgb(255, 255, 255);
+	border-radius: 4px;
+	box-shadow: rgba(0, 1, 0, 0) 0px 0px 0px 1px,
+		rgba(0, 0, 0, 0.15) 0px 5px 25px 0px, rgba(0, 0, 0, 0.05) 0px 3px 3px 0px;
+	overflow-y: scroll;
+}
+
+.popup::-webkit-scrollbar {
+	width: 0;
+}
+
+.popupClose {
+	width: 44px;
+	height: 44px;
+	cursor: pointer;
+}
+
+.dialog {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	background-color: white;
+	border: 1px solid #f9f9f9;
+	max-height: 100%;
+	overflow-y: scroll;
+	box-shadow: 0 0 0 1px rgba(0, 1, 0, 0), 0 5px 25px 0 rgba(0, 0, 0, 0.15),
+		0 3px 3px 0 rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+	.dialog {
+		padding: 0;
+		width: 100vw;
+		max-width: unset;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.dialog {
+		padding: 30px;
+		width: unset;
+		max-width: 800px;
+	}
+}
+
+.text-bold {
+	font-weight: 500;
+}
+
+.btn-circle {
+	border-radius: 100px;
+}
+
+.btn-text {
+	font-weight: 500;
+}
+
+.partnerAndDeliveryFormDialog {
+	max-width: 100vw;
+}
+
+.form-box-item .form-item-detail {
+	font-size: 12px;
+	display: block;
+	line-height: 12px;
+	margin: 0 0 0px;
+	padding: 0;
+	height: 24px;
+	font-weight: normal;
+}
+
+::placeholder {
+	color: rgb(88, 119, 144);
+}
+
+.table-buyticket {
+	border-color: #dbdee0;
+	border-spacing: 0;
+}
+
+.table-buyticket td {
+	border-color: #dbdee0;
+	font-size: 16px;
+}
+
+.table-buyticket th {
+	border-color: #dbdee0;
+	font-size: 16px;
+	font-weight: 500;
+	color: #000;
+}
+
+.table-border tbody tr td:first-child {
+	padding-left: unset;
+}
+
+.overlay {
+	position: fixed;
+	z-index: 1300;
+	inset: 0px;
+}
+
+.backdrop {
+	position: fixed;
+	background-color: rgba(76, 78, 100, 0.5);
+	inset: 0px;
+}
+
+.scroll-body {
+	height: 100%;
+	outline: 0px;
+	overflow: hidden auto;
+	text-align: center;
+	overscroll-behavior: contain;
+}
+
+.elevation {
+	background-color: rgb(255, 255, 255);
+	color: rgba(76, 78, 100, 0.87);
+	transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	border-radius: 10px;
+	background-image: none;
+	margin: 32px 0 0;
+	position: relative;
+	overflow-y: auto;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	max-width: 900px;
+
+	box-shadow: none;
+	border: 1px solid rgba(76, 78, 100, 0.12);
+	padding: 30px;
+}

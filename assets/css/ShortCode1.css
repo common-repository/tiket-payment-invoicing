@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700;1,900&family=Rubik:wght@700&display=swap');
+
+* {
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+#home-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+#leftPanel {
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	width: 34vw; /*535/1920*/
+	left: 3%;
+	margin-top: 1vw;
+	padding-top: 2vw;
+	border-radius: calc(8px + 8 * ((100vw - 1440px) / 1440));
+}
+
+#leftPanel > div {
+	display: flex;
+	justify-content: center;
+}
+
+.total {
+	font-size: calc(16px + 16 * ((100vw - 1440px) / 1440)) !important;
+	text-align: right;
+	margin-right: 5%;
+	margin-top: 2vw;
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.datepickerLabel {
+	margin: 1vw 5%;
+	display: block;
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: calc(13px + 13 * ((100vw - 1440px) / 1440)) !important;
+}
+
+.selectors {
+	border-radius: calc(8px + 8 * ((100vw - 1440px) / 1440));
+	border: 1px solid black;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	justify-content: space-between;
+	height: 2.2vw; /*44/1920*/
+	margin: 0 5%;
+}
+
+#leftPanel > div > select {
+	font-size: calc(13px + 13 * ((100vw - 1440px) / 1440)) !important;
+	border: none;
+	margin-left: 15%;
+	margin-top: 2px;
+	background: #e0f0f3 !important;
+	width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-transform: uppercase;
+	appearance: none;
+	background: url('../../app/containers/Tiket/assets/images/angle-arrow-down2.svg')
+		no-repeat !important;
+	background-size: 20% 20% !important;
+	background-position: 100% center !important;
+}
+
+#leftPanel > div > select:focus {
+	outline: none;
+}
+
+#leftPanel > div > select > option {
+	text-transform: uppercase;
+}
+
+.react-datepicker-wrapper {
+	width: 70% !important;
+}
+
+.react-datepicker__input-container > input {
+	background: transparent;
+	align-self: center !important;
+	margin-left: 5%;
+	width: 100%;
+	padding-left: 0.5vw;
+	font-size: calc(11px + 11 * ((100vw - 1440px) / 1440)) !important;
+	font-family: 'Montserrat' !important;
+	font-weight: 500;
+	border: none;
+}
+
+.react-datepicker-popper,
+.react-datepicker__time-container {
+	z-index: 99999 !important;
+}
+
+.leftPanelButton {
+	text-transform: uppercase;
+	background: #8facae;
+	border: none;
+	color: white;
+	border-radius: calc(8px + 8 * ((100vw - 1440px) / 1440));
+	height: 2.2vw; /*44/1920*/
+	padding-left: 1.3vw; /*25/1920*/
+	padding-right: 1.3vw; /*25/1920*/
+	font-family: 'Rubik';
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	font-size: calc(15px + 15 * ((100vw - 1440px) / 1440));
+	width: auto;
+	line-height: calc(25px + 25 * ((100vw - 1440px) / 1440));
+	margin: 0.3vw 1vw 2vw;
+}
+
+.leftPanelButton:disabled,
+.leftPanelButton[disabled] {
+	background: #ddd;
+	color: #aaa;
+}
+
+#productContainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 66%;
+}
+
+.productTile {
+	margin: 1vw;
+	border-radius: calc(8px + 8 * ((100vw - 1440px) / 1440));
+	display: flex;
+	width: 18.75vw; /*360/1920*/
+	height: 23.2vw; /*446/1920*/
+	margin: 1vw 1.27vw; /*49/1920*/
+	flex-direction: column;
+	position: relative;
+}
+
+.productTile img {
+	width: 86.4%; /*311/360*/
+	height: 16.1vw;
+	object-fit: cover;
+	margin: 1vw 8% 0;
+}
+
+.title {
+	font-size: calc(18px + 18 * ((100vw - 1440px) / 1440));
+	margin-top: 0.9vw; /*19/1920*/
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	font-weight: 700;
+}
+
+.price {
+	font-size: calc(14px + 14 * ((100vw - 1440px) / 1440));
+	margin-top: 0.9vw; /*19/1920*/
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	font-weight: 300;
+}
+
+.titleAndPrice {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 84%;
+	margin: 0 8%;
+}
+
+.availablityAndButtons {
+	font-size: calc(14px + 14 * ((100vw - 1440px) / 1440));
+	display: flex;
+	font-family: 'Montserrat';
+	font-weight: 300;
+	padding-top: 0.9vw;
+	text-transform: uppercase;
+	justify-content: space-between;
+	align-items: center;
+	width: 84%;
+	margin: 0 8% 1vw;
+}
+
+.incOrDecr {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.incOrDecrButton,
+.counter {
+	display: block;
+	background: black;
+	color: white;
+	font-family: 'Rubik';
+	font-size: calc(14px + 14 * ((100vw - 1440px) / 1440));
+	text-align: center;
+	margin: 0.05vw;
+	width: 1.3vw; /*22/1920*/
+	line-height: 1.3vw; /*22/1920*/
+}
+
+.upperCase {
+	text-transform: uppercase;
+}
+
+.incOrDecrButton {
+	cursor: pointer;
+}
+
+.label,
+.input {
+	width: 90% !important;
+	min-width: 90% !important;
+	margin-left: 5% !important;
+}
+
+.input:focus {
+	outline: none !important;
+}
+
+.input {
+	margin-bottom: 1vw !important;
+	border: 1px solid black !important;
+	border-radius: 10px !important;
+	line-height: 2.5vw;
+}
+
+@media screen and (max-width: 600px) {
+	#leftPanel {
+		position: relative;
+		width: 94%;
+		height: 70vw;
+	}
+
+	.datepickerLabel {
+		margin-top: 5vw;
+	}
+
+	#productContainer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.productTile {
+		margin: 4vw 3%;
+		width: 94%;
+		height: 100vw;
+	}
+
+	.productTile img {
+		width: 84% !important;
+		height: 79vw !important;
+	}
+	.title {
+		font-size: calc(25px + 25 * ((100vw - 680px) / 680));
+	}
+	.incOrDecrButton,
+	.counter {
+		width: 5vw;
+		height: 5vw;
+		font-size: calc(20px + 20 * ((100vw - 680px) / 680));
+		line-height: 5vw;
+		margin-left: 1vw;
+	}
+	.titleAndPrice,
+	.availablityAndButtons {
+		margin-top: 2vw;
+	}
+
+	#leftPanel > div > select {
+		margin-right: 1vw;
+	}
+	.react-datepicker__input-container > input {
+		margin-left: 1vw;
+	}
+	#leftPanel > div > select,
+	.react-datepicker__input-container > input,
+	.datepickerLabel,
+	.total,
+	.availablityAndButtons,
+	.price,
+	.leftPanelButton {
+		font-size: calc(20px + 20 * ((100vw - 680px) / 680)) !important;
+	}
+
+	.leftPanelButton:nth-of-type(1) {
+		margin-right: 5%;
+		margin-top: 2vw;
+	}
+
+	.leftPanelButton,
+	.selectors {
+		height: 7vw;
+	}
+
+	#leftPanel,
+	.selectors,
+	.leftPanelButton,
+	.productTile {
+		border-radius: calc(10px + 10 * ((100vw - 680px) / 680)) !important;
+	}
+}
